@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Yusuf</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg" aria-hidden="true"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span
+            class="s4"></span><span class="s5"></span><span class="s6"></span><span class="s7"></span></div>
+    <main>
+        <section class="cover" id="cover">
+            <div class="mark draw" aria-hidden="true"><i></i><i></i></div>
+            <h1>Happy Birthday To Me</h1>
+            <hr class="rule">
+            <p class="sub">A verse and a letter for the year ahead.</p>
+            <button class="btn" id="openBtn" aria-controls="app" aria-expanded="false">Open the card</button>
+        </section>
+
+        <div id="app">
+            <div class="tabs" role="tablist" aria-label="Card sections">
+                <button class="tab" role="tab" id="t1" aria-selected="true" aria-controls="p1">Verse</button>
+                <button class="tab" role="tab" id="t2" aria-selected="false" aria-controls="p2">My letter</button>
+            </div>
+
+            <section class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+                <p class="lead">Tap the verse to read it.</p>
+                <details open>
+                    <summary>Surah Maryam <span>19:33</span></summary>
+                    <p class="ar" lang="ar">وَالسَّلَامُ عَلَيَّ يَوْمَ وُلِدتُّ وَيَوْمَ أَمُوتُ وَيَوْمَ أُبْعَثُ
+                        حَيًّا</p>
+                    <p class="tr">“And peace is upon me the day I was born, the day I die, and the day I am raised
+                        alive.”</p>
+                    <p class="note"> A calm reminder that every
+                        stage of life is held in peace.</p>
+                   
+                </details>
+            </section>
+
+            <section class="panel letter" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+                <h2>A letter to myself</h2>
+                <p>Bismillah.</p>
+                <p>Another year, Alhamdulillah. I’m still here, and that alone is something to be grateful for.</p>
+                <p>This past year wasn’t always smooth. There were days I felt stuck, days things just didn’t click, and
+                    times I wanted to rush ahead of where I was. But I kept showing up, kept learning, and kept fixing
+                    what broke.</p>
+                <p>This year, I want to be kinder to myself when I’m slow, and more serious about my time. I want to
+                    keep building and keep learning, and keep my heart clean while I do it. I want to be good to the
+                    people around me, not just good at what I do.</p>
+                <p class="pray"><strong>Dua For Myself:</strong> Ya Allah, thank You for this life, my health, and every day
+                    You have given me. Forgive me for my mistakes and my heedlessness. Bless my time, my knowledge and
+                    my work. Make me patient with what I’m still waiting for, and grateful for what I already have.
+                    Protect me and the people I love. Guide me to what is best for me in this world and the hereafter, and
+                    let me live and die in Your pleasure. Ameen. 🤲</p>
+                <p class="sign">Happy birthday to me. 🎂
+            </section>
+
+            <footer>
+                <p>May this year bring me barakah, knowledge and peace. 🤲</p>
+               
+                <button class="toggle" id="themeBtn">light or dark</button>
+            </footer>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
